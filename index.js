@@ -188,6 +188,7 @@ class BST {
     } else {
       this.insert(this.root, newnode);
     }
+    
   }
 
   insert(data1, data2) {
