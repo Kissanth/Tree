@@ -167,7 +167,8 @@
 
 // Practice  Binary search tree code
 
-class Node {fdf
+class Node {
+  fdf;
   constructor(data) {
     this.data = data;
     this.left = null;
@@ -188,7 +189,6 @@ class BST {
     } else {
       this.insert(this.root, newnode);
     }
-    
   }
 
   insert(data1, data2) {
@@ -208,34 +208,21 @@ class BST {
   }
 
   remove(value) {
-
-    this.root = this.remoeNode(this.root,value)
-  
+    this.root = this.remoeNode(this.root, value);
   }
 
-
-  removeNode(node,value){
-
-    if(node===null){
+  removeNode(node, value) {
+    if (node === null) {
       return null;
-      
     }
-    if(node.right > value){
-      node.left =  this.removeNode(node.left,value)
-      
-    }else if(node.data < value){
-    node.right = this.re
-      
+    if (node.right > value) {
+      node.left = this.removeNode(node.left, value);
+    } else if (node.data < value) {
+      node.right = this.re;
     }
-    
   }
-
-  
 }
 
-
-
-  
 let s = new BST(12);
 
 s.add(33);
@@ -245,5 +232,5 @@ s.add(66);
 // [s.add(2);]
 console.log(s);
 
-s.remove(3)
-console.log(s)
+s.remove(3);
+console.log(s);
